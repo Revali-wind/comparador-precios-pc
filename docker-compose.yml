@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:16
+    container_name: comparador_pc_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: comparador
+      POSTGRES_PASSWORD: comparador123
+      POSTGRES_DB: comparador_pc
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
