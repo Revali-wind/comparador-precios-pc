@@ -1,0 +1,7 @@
+venv/
+__pycache__/
+*.pyc
+debug_*.png
+debug_*.html
+paso*.png
+.DS_Store
